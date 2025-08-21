@@ -4,7 +4,7 @@ namespace: dev
 resources:
 - ../../base
 images:
-- name: your-registry/dotnet-codebase-test
+- name: ghcr.io/meldaugherty/dotnet-codebase-test
   newTag: dev-latest
 patchesStrategicMerge:
 - deployment.yaml

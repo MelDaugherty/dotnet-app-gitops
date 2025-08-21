@@ -14,9 +14,11 @@ spec:
       labels:
         app: dotnet-app
     spec:
+      imagePullSecrets:
+        - name:gh-registry
       containers:
       - name: dotnet-app
-        image: your-registry/dotnet-codebase-test:latest
+        image: ghcr.io/meldaugherty/dotnet-codebase-test:latest
         ports:
         - containerPort: 80
         env:
