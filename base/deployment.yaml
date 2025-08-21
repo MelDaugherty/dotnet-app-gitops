@@ -15,7 +15,7 @@ spec:
         app: dotnet-app
     spec:
       imagePullSecrets:
-        - name:gh-registry
+        - name: gh-registry
       containers:
       - name: dotnet-app
         image: ghcr.io/meldaugherty/dotnet-codebase-test:latest
