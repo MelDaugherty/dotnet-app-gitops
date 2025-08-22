@@ -6,10 +6,12 @@ spec:
   selector:
     app: dotnet-app
   ports:
-  - protocol: TCP
-    port: 5000
-    targetPort: 5000
-  - protocol: TCP
-    port: 5001
-    targetPort: 5001
+    - name: http
+      protocol: TCP
+      port: 5000
+      targetPort: 5000
+    - name: https
+      protocol: TCP
+      port: 5001
+      targetPort: 5001
   type: LoadBalancer
