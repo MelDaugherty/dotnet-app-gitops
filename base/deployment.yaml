@@ -23,5 +23,9 @@ spec:
         - containerPort: 5000
         - containerPort: 5001
         env:
-        - name: ASPNETCORE_ENVIRONMENT
-          value: "Production"
+          - name: ASPNETCORE_ENVIRONMENT
+            value: "Production"
+          - name: ASPNETCORE_URLS
+            value: "http://0.0.0.0:5000;https://0.0.0.0:5001"
+          - name: ASPNETCORE_URLS
+            value: "http://0.0.0.0:5000;https://0.0.0.0:5001"
