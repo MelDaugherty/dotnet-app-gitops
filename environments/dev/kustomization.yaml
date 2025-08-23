@@ -5,6 +5,6 @@ resources:
 - ../../base
 images:
 - name: ghcr.io/meldaugherty/dotnet-codebase-test
-  newTag: sha-daa9de6579d118fc9844c5449222210735ab97b8
+  newTag: sha-489f69d3cfbecad9be8af94bb021bb765735d0e8
 patchesStrategicMerge:
 - deployment.yaml
