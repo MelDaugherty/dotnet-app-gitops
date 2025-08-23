@@ -1,4 +1,4 @@
 apiVersion: v2
-name: dotnet-app
+name: helm-dotnet-app
 version: 0.1.0
 description: A Helm chart for Kubernetes deployment of dotnet-app
