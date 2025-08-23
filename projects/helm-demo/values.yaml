@@ -9,3 +9,5 @@ service:
 env:
   ASPNETCORE_ENVIRONMENT: Production
   ASPNETCORE_URLS: http://0.0.0.0:5000
+imagePullSecrets:
+  - name: gh-registry
