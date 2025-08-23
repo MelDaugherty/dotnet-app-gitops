@@ -1,0 +1,11 @@
+replicaCount: 3
+image:
+  repository: ghcr.io/meldaugherty/dotnet-codebase-test
+  tag: latest
+service:
+  type: LoadBalancer
+  port: 5000
+  targetPort: 5000
+env:
+  ASPNETCORE_ENVIRONMENT: Production
+  ASPNETCORE_URLS: http://0.0.0.0:5000
